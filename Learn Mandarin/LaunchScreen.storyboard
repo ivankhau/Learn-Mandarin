@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bz-Rp-sgW">
+                                <rect key="frame" x="97" y="242" width="180" height="183"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pac-man (1)" translatesAutoresizingMaskIntoConstraints="NO" id="MNu-6i-8Gs">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="CKT-wD-2xa"/>
+                                            <constraint firstAttribute="height" constant="90" id="JDi-ET-9kn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound-bars-pulse (1)" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-nh-s7b">
+                                        <rect key="frame" x="90" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="BRU-QJ-D1I"/>
+                                            <constraint firstAttribute="width" constant="90" id="OoV-Y9-o2u"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官话" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-k3-1ml">
+                                        <rect key="frame" x="0.0" y="98" width="180" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="5P7-cP-XTQ"/>
+                                            <constraint firstAttribute="height" constant="85" id="Pwl-ky-357"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="80"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fSj-nh-s7b" secondAttribute="trailing" id="C0A-kE-zxl"/>
+                                    <constraint firstAttribute="width" constant="180" id="QmH-1H-mxw"/>
+                                    <constraint firstItem="MNu-6i-8Gs" firstAttribute="top" secondItem="8bz-Rp-sgW" secondAttribute="top" id="Vi2-L4-hXA"/>
+                                    <constraint firstItem="fIT-k3-1ml" firstAttribute="leading" secondItem="8bz-Rp-sgW" secondAttribute="leading" id="lkW-Km-Xa0"/>
+                                    <constraint firstAttribute="bottom" secondItem="fIT-k3-1ml" secondAttribute="bottom" id="me5-sc-zXe"/>
+                                    <constraint firstItem="fSj-nh-s7b" firstAttribute="top" secondItem="8bz-Rp-sgW" secondAttribute="top" id="nte-FN-NeA"/>
+                                    <constraint firstAttribute="trailing" secondItem="fIT-k3-1ml" secondAttribute="trailing" id="obV-Om-IaC"/>
+                                    <constraint firstAttribute="height" constant="183" id="pqH-66-wKb"/>
+                                    <constraint firstItem="MNu-6i-8Gs" firstAttribute="leading" secondItem="8bz-Rp-sgW" secondAttribute="leading" id="yQm-kd-1GL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764705882354" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8bz-Rp-sgW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QS0-8Z-Yi7"/>
+                            <constraint firstItem="8bz-Rp-sgW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="RIg-uK-neh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pac-man (1)" width="512" height="512"/>
+        <image name="sound-bars-pulse (1)" width="512" height="512"/>
+    </resources>
+</document>
